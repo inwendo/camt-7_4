@@ -238,8 +238,8 @@ class Record
         $xmlStatus = $xmlEntry->Sts;
 
         // CAMT v08 uses substructure, so we check for its existence or fallback to the element itself to keep compatibility with CAMT v04
-        return (string) $xmlStatus?->Cd
-            ?: (string) $xmlStatus?->Prtry
+        return (string) @$xmlStatus->Cd
+            ?: (string) @$xmlStatus->Prtry
                 ?: (string) $xmlStatus
                     ?: null;
     }
