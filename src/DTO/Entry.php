@@ -9,38 +9,80 @@ use Money\Money;
 
 class Entry
 {
-    private Record $record;
+    /**
+     * @var Record
+     */
+    private $record;
 
-    private Money $amount;
+    /**
+     * @var Money
+     */
+    private $amount;
 
-    private ?DateTimeImmutable $bookingDate = null;
+    /**
+     * @var DateTimeImmutable|null
+     */
+    private $bookingDate = null;
 
-    private ?DateTimeImmutable $valueDate = null;
+    /**
+     * @var DateTimeImmutable|null
+     */
+    private $valueDate = null;
 
     /**
      * @var EntryTransactionDetail[]
      */
-    private array $transactionDetails = [];
+    private $transactionDetails = [];
 
-    private bool $reversalIndicator = false;
+    /**
+     * @var bool
+     */
+    private $reversalIndicator = false;
 
-    private ?string $reference = null;
+    /**
+     * @var string|null
+     */
+    private $reference = null;
 
-    private ?string $accountServicerReference = null;
+    /**
+     * @var string|null
+     */
+    private $accountServicerReference = null;
 
-    private int $index;
+    /**
+     * @var int
+     */
+    private $index;
 
-    private ?string $batchPaymentId = null;
+    /**
+     * @var string|null
+     */
+    private $batchPaymentId = null;
 
-    private ?string $additionalInfo = null;
+    /**
+     * @var string|null
+     */
+    private $additionalInfo = null;
 
-    private ?BankTransactionCode $bankTransactionCode = null;
+    /**
+     * @var BankTransactionCode|null
+     */
+    private $bankTransactionCode = null;
 
-    private ?Charges $charges = null;
+    /**
+     * @var Charges|null
+     */
+    private $charges = null;
 
-    private ?string $status = null;
+    /**
+     * @var string|null
+     */
+    private $status = null;
 
-    private ?string $creditDebitIndicator = null;
+    /**
+     * @var string|null
+     */
+    private $creditDebitIndicator = null;
 
     public function __construct(Record $record, int $index, Money $amount)
     {

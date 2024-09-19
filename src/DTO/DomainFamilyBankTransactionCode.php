@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class DomainFamilyBankTransactionCode
 {
-    private string $code;
+    /**
+     * @var string
+     */
+    private $code;
 
-    private string $subFamilyCode;
+    /**
+     * @var string
+     */
+    private $subFamilyCode;
 
     public function __construct(string $code, string $subFamilyCode)
     {

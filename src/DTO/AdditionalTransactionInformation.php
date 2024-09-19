@@ -6,7 +6,10 @@ namespace Genkgo\Camt\DTO;
 
 class AdditionalTransactionInformation
 {
-    private string $information;
+    /**
+     * @var string
+     */
+    private $information;
 
     public function __construct(string $information)
     {

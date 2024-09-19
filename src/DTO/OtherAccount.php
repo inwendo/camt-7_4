@@ -6,11 +6,20 @@ namespace Genkgo\Camt\DTO;
 
 class OtherAccount extends Account
 {
-    private string $identification;
+    /**
+     * @var string
+     */
+    private $identification;
 
-    private ?string $schemeName = null;
+    /**
+     * @var string|null
+     */
+    private $schemeName = null;
 
-    private ?string $issuer = null;
+    /**
+     * @var string|null
+     */
+    private $issuer = null;
 
     public function __construct(string $identification)
     {

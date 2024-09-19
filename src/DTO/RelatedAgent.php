@@ -6,7 +6,10 @@ namespace Genkgo\Camt\DTO;
 
 class RelatedAgent
 {
-    private RelatedAgentTypeInterface $relatedAgentDetails;
+    /**
+     * @var RelatedAgentTypeInterface
+     */
+    private $relatedAgentDetails;
 
     /**
      * RelatedAgent constructor.

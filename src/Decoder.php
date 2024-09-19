@@ -11,14 +11,20 @@ use SimpleXMLElement;
 
 class Decoder implements DecoderInterface
 {
-    private SimpleXMLElement $document;
-
-    private Decoder\Message $messageDecoder;
+    /**
+     * @var SimpleXMLElement
+     */
+    private $document;
 
     /**
-     * Path to the schema definition.
+     * @var Decoder\Message
      */
-    protected string $schemeDefinitionPath;
+    private $messageDecoder;
+
+    /**
+     * @var string Path to the schema definition.
+     */
+    protected $schemeDefinitionPath;
 
     public function __construct(Decoder\Message $messageDecoder, string $schemeDefinitionPath)
     {

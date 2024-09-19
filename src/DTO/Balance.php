@@ -27,11 +27,20 @@ class Balance
 
     public const TYPE_EXPECTED_CREDIT = 'expected_credit';
 
-    private Money $amount;
+    /**
+     * @var Money
+     */
+    private $amount;
 
-    private string $type;
+    /**
+     * @var string
+     */
+    private $type;
 
-    private DateTimeImmutable $date;
+    /**
+     * @var DateTimeImmutable
+     */
+    private $date;
 
     private function __construct(string $type, Money $amount, DateTimeImmutable $date)
     {

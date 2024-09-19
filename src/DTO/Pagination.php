@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class Pagination
 {
-    private string $pageNumber;
+    /**
+     * @var string
+     */
+    private $pageNumber;
 
-    private bool $lastPage;
+    /**
+     * @var bool
+     */
+    private $lastPage;
 
     public function __construct(string $pageNumber, bool $lastPage)
     {

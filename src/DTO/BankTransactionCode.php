@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class BankTransactionCode
 {
-    private ?ProprietaryBankTransactionCode $proprietary = null;
+    /**
+     * @var ProprietaryBankTransactionCode|null
+     */
+    private $proprietary = null;
 
-    private ?DomainBankTransactionCode $domain = null;
+    /**
+     * @var DomainBankTransactionCode|null
+     */
+    private $domain = null;
 
     public function getProprietary(): ?ProprietaryBankTransactionCode
     {

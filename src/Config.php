@@ -13,9 +13,12 @@ class Config
     /**
      * @var MessageFormatInterface[]
      */
-    private array $messageFormats = [];
+    private $messageFormats = [];
 
-    private bool $xsdValidation = true;
+    /**
+     * @var bool
+     */
+    private $xsdValidation = true;
 
     public function addMessageFormat(MessageFormatInterface $messageFormat): void
     {

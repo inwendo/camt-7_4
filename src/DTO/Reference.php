@@ -6,38 +6,80 @@ namespace Genkgo\Camt\DTO;
 
 class Reference
 {
-    private ?string $messageId = null;
+    /**
+     * @var string|null
+     */
+    private $messageId = null;
 
-    private ?string $accountServicerReference = null;
+    /**
+     * @var string|null
+     */
+    private $accountServicerReference = null;
 
-    private ?string $paymentInformationId = null;
+    /**
+     * @var string|null
+     */
+    private $paymentInformationId = null;
 
-    private ?string $instructionId = null;
+    /**
+     * @var string|null
+     */
+    private $instructionId = null;
 
-    private ?string $endToEndId = null;
+    /**
+     * @var string|null
+     */
+    private $endToEndId = null;
 
-    private ?string $uuidEndToEndReference = null;
+    /**
+     * @var string|null
+     */
+    private $uuidEndToEndReference = null;
 
-    private ?string $transactionId = null;
+    /**
+     * @var string|null
+     */
+    private $transactionId = null;
 
-    private ?string $mandateId = null;
+    /**
+     * @var string|null
+     */
+    private $mandateId = null;
 
-    private ?string $chequeNumber = null;
+    /**
+     * @var string|null
+     */
+    private $chequeNumber = null;
 
-    private ?string $clearingSystemReference = null;
+    /**
+     * @var string|null
+     */
+    private $clearingSystemReference = null;
 
-    private ?string $accountOwnerTransactionId = null;
+    /**
+     * @var string|null
+     */
+    private $accountOwnerTransactionId = null;
 
-    private ?string $accountServicerTransactionId = null;
+    /**
+     * @var string|null
+     */
+    private $accountServicerTransactionId = null;
 
-    private ?string $marketInfrastructureTransactionId = null;
+    /**
+     * @var string|null
+     */
+    private $marketInfrastructureTransactionId = null;
 
-    private ?string $processingId = null;
+    /**
+     * @var string|null
+     */
+    private $processingId = null;
 
     /**
      * @var ProprietaryReference[]
      */
-    private array $proprietaries = [];
+    private  $proprietaries = [];
 
     public function getMessageId(): ?string
     {

@@ -6,26 +6,50 @@ namespace Genkgo\Camt\DTO;
 
 class Address
 {
-    private ?string $country = null;
+    /**
+     * @var string|null
+     */
+    private $country = null;
 
-    private ?string $countrySubDivision = null;
+    /**
+     * @var string|null
+     */
+    private $countrySubDivision = null;
 
     /**
      * @var string[]
      */
-    private array $addressLines = [];
+    private $addressLines = [];
 
-    private ?string $department = null;
+    /**
+     * @var string|null
+     */
+    private $department = null;
 
-    private ?string $subDepartment = null;
+    /**
+     * @var string|null
+     */
+    private $subDepartment = null;
 
-    private ?string $streetName = null;
+    /**
+     * @var string|null
+     */
+    private $streetName = null;
 
-    private ?string $buildingNumber = null;
+    /**
+     * @var string|null
+     */
+    private $buildingNumber = null;
 
-    private ?string $postCode = null;
+    /**
+     * @var string|null
+     */
+    private $postCode = null;
 
-    private ?string $townName = null;
+    /**
+     * @var string|null
+     */
+    private $townName = null;
 
     public function getCountry(): ?string
     {

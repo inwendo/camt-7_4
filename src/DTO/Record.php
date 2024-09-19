@@ -8,30 +8,60 @@ use DateTimeImmutable;
 
 abstract class Record
 {
-    protected string $id;
+    /**
+     * @var string
+     */
+    protected $id;
 
-    protected DateTimeImmutable $createdOn;
+    /**
+     * @var DateTimeImmutable
+     */
+    protected $createdOn;
 
-    protected Account $account;
+    /**
+     * @var Account
+     */
+    protected $account;
 
-    protected ?Pagination $pagination = null;
+    /**
+     * @var Pagination|null
+     */
+    protected $pagination = null;
 
-    protected ?string $electronicSequenceNumber = null;
+    /**
+     * @var string|null
+     */
+    protected $electronicSequenceNumber = null;
 
-    protected ?string $legalSequenceNumber = null;
+    /**
+     * @var string|null
+     */
+    protected $legalSequenceNumber = null;
 
-    protected ?string $copyDuplicateIndicator = null;
+    /**
+     * @var string|null
+     */
+    protected $copyDuplicateIndicator = null;
 
-    protected ?DateTimeImmutable $fromDate = null;
+    /**
+     * @var DateTimeImmutable|null
+     */
+    protected $fromDate = null;
 
-    protected ?DateTimeImmutable $toDate = null;
+    /**
+     * @var DateTimeImmutable|null
+     */
+    protected $toDate = null;
 
     /**
      * @var Entry[]
      */
     protected $entries = [];
 
-    protected ?string $additionalInformation = null;
+    /**
+     * @var string|null
+     */
+    protected $additionalInformation = null;
 
     public function __construct(string $id, DateTimeImmutable $createdOn, Account $account)
     {

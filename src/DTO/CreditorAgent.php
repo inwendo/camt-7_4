@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class CreditorAgent implements RelatedAgentTypeInterface
 {
-    private string $name;
+    /**
+     * @var string
+     */
+    private $name;
 
-    private string $BIC;
+    /**
+     * @var string
+     */
+    private $BIC;
 
     /**
      * CreditorAgent constructor.

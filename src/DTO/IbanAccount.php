@@ -8,7 +8,10 @@ use Genkgo\Camt\Iban;
 
 class IbanAccount extends Account
 {
-    private Iban $iban;
+    /**
+     * @var Iban
+     */
+    private $iban;
 
     public function __construct(Iban $iban)
     {

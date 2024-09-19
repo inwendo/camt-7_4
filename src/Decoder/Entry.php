@@ -9,7 +9,10 @@ use SimpleXMLElement;
 
 class Entry
 {
-    private EntryTransactionDetail $entryTransactionDetailDecoder;
+    /**
+     * @var EntryTransactionDetail
+     */
+    private $entryTransactionDetailDecoder;
 
     public function __construct(EntryTransactionDetail $entryTransactionDetailDecoder)
     {

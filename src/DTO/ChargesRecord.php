@@ -8,11 +8,20 @@ use Money\Money;
 
 class ChargesRecord
 {
-    private Money $amount;
+    /**
+     * @var Money
+     */
+    private $amount;
 
-    private bool $chargesIncludedIndicator = false;
+    /**
+     * @var bool
+     */
+    private $chargesIncludedIndicator = false;
 
-    private string $identification;
+    /**
+     * @var string
+     */
+    private $identification;
 
     public function getAmount(): Money
     {

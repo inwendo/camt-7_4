@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class ReturnInformation
 {
-    private string $code;
+    /**
+     * @var string
+     */
+    private $code;
 
-    private string $additionalInformation;
+    /**
+     * @var string
+     */
+    private $additionalInformation;
 
     public function getCode(): string
     {

@@ -6,8 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class Creditor implements RelatedPartyTypeInterface
 {
-    private ?Address $address = null;
-    private ?string $name;
+    /**
+     * @var Address|null
+     */
+    private $address = null;
+
+    /**
+     * @var string|null
+     */
+    private $name;
 
     public function __construct(?string $name)
     {

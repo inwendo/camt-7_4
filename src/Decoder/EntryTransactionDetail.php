@@ -13,9 +13,15 @@ use SimpleXMLElement;
 
 abstract class EntryTransactionDetail
 {
-    private DateDecoderInterface $dateDecoder;
+    /**
+     * @var DateDecoderInterface
+     */
+    private $dateDecoder;
 
-    private MoneyFactory $moneyFactory;
+    /**
+     * @var MoneyFactory
+     */
+    private $moneyFactory;
 
     /**
      * EntryTransactionDetail constructor.

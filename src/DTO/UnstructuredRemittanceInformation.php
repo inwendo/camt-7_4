@@ -6,7 +6,10 @@ namespace Genkgo\Camt\DTO;
 
 class UnstructuredRemittanceInformation
 {
-    private string $message;
+    /**
+     * @var string
+     */
+    private $message;
 
     public function __construct(string $message)
     {

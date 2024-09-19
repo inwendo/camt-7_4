@@ -6,7 +6,10 @@ namespace Genkgo\Camt\DTO;
 
 class ProprietaryAccount extends Account
 {
-    private string $id;
+    /**
+     * @var string
+     */
+    private $id;
 
     public function __construct(string $id)
     {

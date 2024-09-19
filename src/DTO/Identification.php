@@ -6,7 +6,10 @@ namespace Genkgo\Camt\DTO;
 
 abstract class Identification
 {
-    protected ?string $identification = null;
+    /**
+     * @var string|null
+     */
+    protected $identification = null;
 
     public function getIdentification(): ?string
     {

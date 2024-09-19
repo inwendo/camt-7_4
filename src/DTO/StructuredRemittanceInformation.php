@@ -6,9 +6,15 @@ namespace Genkgo\Camt\DTO;
 
 class StructuredRemittanceInformation
 {
-    private ?CreditorReferenceInformation $creditorReferenceInformation = null;
+    /**
+     * @var CreditorReferenceInformation|null
+     */
+    private $creditorReferenceInformation = null;
 
-    private ?string $additionalRemittanceInformation = null;
+    /**
+     * @var string|null
+     */
+    private $additionalRemittanceInformation = null;
 
     public function getAdditionalRemittanceInformation(): ?string
     {

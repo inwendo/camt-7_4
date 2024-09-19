@@ -10,9 +10,15 @@ use SimpleXMLElement;
 
 abstract class Message
 {
-    protected Record $recordDecoder;
+    /**
+     * @var Record
+     */
+    protected $recordDecoder;
 
-    protected DateDecoderInterface $dateDecoder;
+    /**
+     * @var DateDecoderInterface
+     */
+    protected $dateDecoder;
 
     /**
      * Message constructor.
