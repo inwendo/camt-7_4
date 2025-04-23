@@ -1,5 +1,5 @@
 {
-    "name": "genkgo/camt",
+    "name": "inwendo/camt",
     "description": "Library to read CAMT files (XML containing bank statements).",
     "license": "MIT",
     "scripts": {
